@@ -1,9 +1,10 @@
 <template>
-  <div class="Test">
+  <div class="Practice">
     <h1>{{ msg }}</h1>
     <div> "changing works pretty fast here" </div>
     <h1> Data & Methods </h1>
-    <p> <strong>Use double curly brackets to output returned data </strong></p>
+    <p> <strong>Use double curly brackets to output
+      returned data </strong></p>
 
     <p>Job is: {{ job }}</p>
     <p> Use 'this' keyword when accessing data inside functions <br>
@@ -13,7 +14,8 @@
     <h1> Data Binding </h1>
     <p> <strong>v-bind: is used to bind data to attributes</strong></p>
 
-    <a v-bind:href="website"> Binding a website to a href <br> </a>
+    <a v-bind:href="website"> Binding a website to a href
+      (remember to preface site with https//) <br> </a>
     <p> Binding to input value </p>
     <input type="text" v-bind:value="job" />
 
