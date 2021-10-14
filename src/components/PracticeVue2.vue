@@ -47,7 +47,7 @@
       conditionals are necessary
       </strong></p>
 
-    <h1> Looping with through lists </h1>
+    <h1> Looping through lists </h1>
     <p> <strong>v-for="element in array name" is used to loop
       through arrays. The syntax is similiar to the shorthand
       of looping in vanilla JavaScript, however "in" is used
@@ -66,11 +66,28 @@
       <li v-for="developer in developers"> {{developer.name}} - {{developer.age}} </li>
     </ul>
 
+    <h1> Nested Components </h1>
+    <p> <strong> Components can be nested by: <br>
+    1. Creating an element tag to contain the component<br>
+    2. Importing the component through its default
+     name and file path<br>
+    3. Creating a components object in export default and
+    setting the tag name to the component
+    name - {'tag name': component name}
+      </strong></p>
+
+    <h3> Nesting HelloWorld Component </h3>
+    <hello-world></hello-world>
+
   </div>
 </template>
 
 <script>
+import HelloWorld from './HelloWorld.vue'
 export default {
+  components: {
+    'hello-world': HelloWorld
+  },
   name: 'PracticeVue2',
   data () {
     return {

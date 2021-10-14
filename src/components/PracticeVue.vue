@@ -18,6 +18,10 @@
       (remember to preface site with https//) <br> </a>
     <p> Binding to input value </p>
     <input type="text" v-bind:value="job" />
+    <p> Styles from the data object can be binded to an element
+      by passing an object with the property and
+      value -  {property: value}  </p>
+    <div v-bind:style="{background: color, width: '50%'}"> Style </div>
 
     <h1> Events </h1>
     <p> <strong>v-on: is used to register event handlers to elements <br>
@@ -93,6 +97,7 @@ export default {
       msg: 'Beginning Practice',
       job: 'Developer',
       website: 'http://www.google.ca',
+      color: 'teal',
       age: 27,
       X: 0,
       Y: 0,
