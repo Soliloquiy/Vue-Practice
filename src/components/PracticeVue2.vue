@@ -73,7 +73,7 @@
      name and file path<br>
     3. Creating a components object in export default and
     setting the tag name to the component
-    name - {'tag name': component name}
+    name, ie {'tag name': component name}
       </strong></p>
 
     <h3> Nesting HelloWorld Component </h3>
